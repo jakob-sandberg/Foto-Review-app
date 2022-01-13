@@ -1,0 +1,54 @@
+.album-page-container {
+  display: grid;
+  justify-content: center;
+  margin: 20px;
+}
+
+.album-page-container h1 {
+  text-align: center;
+}
+
+.url-style {
+  text-align: center;
+  padding: 10px;
+  background-color: grey;
+}
+
+.cardsContainer {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin: 16px 0;
+}
+
+.cards img {
+  width: 240px;
+  margin: 0 16px;
+  margin-bottom: 16px;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.cards label {
+  margin-left: 16px;
+}
+
+@media (min-width: 760px) {
+  .cardsContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+  }
+}
+
+span {
+  margin-bottom: 20px;
+}

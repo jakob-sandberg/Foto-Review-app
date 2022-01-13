@@ -1,25 +1,15 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.cardcontainer {
+  display: inline-block;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.new-album-container {
-  display: grid;
+.album-name {
+  font-size: 1.2rem;
+  display: flex;
   justify-content: center;
 }
 
-/* Create button in NewAlbumForm */
-.create-button {
-  width: 20vw;
+.change-name {
+  margin-left: auto;
   align-items: center;
   background-color: #b4928d;
   border: 2px solid #111;
@@ -41,50 +31,12 @@ code {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 10px;
 }
 
-.create-button:after {
-  background-color: #111;
-  border-radius: 8px;
-  content: "";
-  display: block;
-  height: 48px;
-  left: 0;
-  width: 100%;
-  position: absolute;
-  top: -2px;
-  transform: translate(8px, 8px);
-  transition: transform 0.2s ease-out;
-  z-index: -1;
-}
-
-.create-button:hover:after {
-  transform: translate(0, 0);
-}
-
-.create-button:active {
-  background-color: #ffdeda;
-  outline: 0;
-}
-
-.create-button:hover {
-  outline: 0;
-}
-
-@media (min-width: 768px) {
-  .create-button {
-    padding: 0 40px;
-  }
-}
-
-/* Form NewAlbumForm */
-
-.album-form {
+.new-name-form {
   font-family: "Open Sans Condensed", arial, sans;
-  width: 50vw;
-  padding: 30px;
+  padding: 10px;
   background: #ffffff;
   margin: 50px auto;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
@@ -92,7 +44,7 @@ code {
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.22);
 }
 
-.album-form h2 {
+.new-name-form h2 {
   background: #4d4d4d;
   text-transform: uppercase;
   font-family: "Open Sans Condensed", sans-serif;
@@ -103,7 +55,7 @@ code {
   margin: -30px -30px 30px -30px;
 }
 
-.album-form input[type="text"] {
+.new-name-form input[type="text"] {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -119,7 +71,7 @@ code {
   height: 45px;
 }
 
-.save-button {
+button {
   background-color: #6e6e6e;
   border: none;
   color: white;
@@ -132,12 +84,6 @@ code {
   cursor: pointer;
 }
 
-.customerDone {
-  display: flex;
-  justify-content: center;
-}
-
-.customerDone img {
-  margin: auto;
-  width: 50%;
+.change-name-container {
+  display: grid;
 }

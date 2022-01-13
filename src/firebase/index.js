@@ -3,8 +3,15 @@ import { getAuth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getStorage } from "firebase/storage";
 
-// Your web app's Firebase configuration
-const firebaseConfig = {};
+//Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyC7UoZSG9kH8OGVlW5J8Nf3Dib860KrVwg",
+  authDomain: "foto-review-app.firebaseapp.com",
+  projectId: "foto-review-app",
+  storageBucket: "foto-review-app.appspot.com",
+  messagingSenderId: "860377299254",
+  appId: "1:860377299254:web:b5c1615c40b41835ea1b97",
+};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
