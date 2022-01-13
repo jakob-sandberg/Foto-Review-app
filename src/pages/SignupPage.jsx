@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { Container, Form, Button } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
-
+import "../index.css";
 import { useAuthContext } from "../context/AuthContext";
 
 const Signuppage = () => {
@@ -31,29 +31,32 @@ const Signuppage = () => {
   };
 
   return (
-    <Container className="row d-flex justify-content-center">
-      <Form onSubmit={handleSubmit} className="col-md-4 mt-5">
-        <Form.Group id="email" className="mb-3">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" required ref={emailRef} />
-        </Form.Group>
+    <div className="SignUpContainer">
+      <Container className="row d-flex justify-content-center">
+        <h1>Sign up to upload some Pics!</h1>
+        <Form onSubmit={handleSubmit} className="col-md-4 mt-5">
+          <Form.Group id="email" className="mb-3">
+            <Form.Label>Email</Form.Label>
+            <Form.Control type="email" required ref={emailRef} />
+          </Form.Group>
 
-        <Form.Group id="pw" className="mb-3">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" required ref={pwRef} />
-        </Form.Group>
+          <Form.Group id="pw" className="mb-3">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" required ref={pwRef} />
+          </Form.Group>
 
-        <Form.Group id="pw-confirm" className="mb-3">
-          <Form.Label>Password Confirmation</Form.Label>
-          <Form.Control type="password" required ref={pwConfirmRef} />
-        </Form.Group>
+          <Form.Group id="pw-confirm" className="mb-3">
+            <Form.Label>Password Confirmation</Form.Label>
+            <Form.Control type="password" required ref={pwConfirmRef} />
+          </Form.Group>
 
-        <Button disabled={loading} type="submit">
-          Sign Up
-        </Button>
-        {error ? <span>{error}</span> : ""}
-      </Form>
-    </Container>
+          <Button disabled={loading} type="submit">
+            Sign Up
+          </Button>
+          {error ? <span>{error}</span> : ""}
+        </Form>
+      </Container>
+    </div>
   );
 };
 

@@ -146,3 +146,9 @@ code {
   display: grid;
   justify-content: center;
 }
+
+.SignUpContainer {
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
