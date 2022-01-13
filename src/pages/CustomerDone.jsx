@@ -4,7 +4,7 @@ import "../index.css";
 const CustomerDone = () => {
   return (
     <div className="customerDone">
-      <img src="assets/boom.jpg" />
+      <img src="assets/boom.jpg" alt="Done" />
     </div>
   );
 };

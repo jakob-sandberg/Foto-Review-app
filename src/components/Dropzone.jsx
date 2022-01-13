@@ -14,6 +14,7 @@ const Dropzone = () => {
     }
 
     uploadImage.mutate(acceptedFiles, id);
+    // eslint-disable-next-line
   }, []);
 
   const {

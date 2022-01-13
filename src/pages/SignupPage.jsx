@@ -7,7 +7,7 @@ import { useAuthContext } from "../context/AuthContext";
 const Signuppage = () => {
   const { signup } = useAuthContext();
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+  const [setError] = useState(null);
   const emailRef = useRef();
   const pwRef = useRef();
   const pwConfirmRef = useRef();
