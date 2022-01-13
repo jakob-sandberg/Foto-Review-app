@@ -7,7 +7,7 @@ import { useAuthContext } from "../context/AuthContext";
 const Signuppage = () => {
   const { signup } = useAuthContext();
   const [loading, setLoading] = useState(false);
-  const [setError] = useState(null);
+  const [error, setError] = useState(null);
   const emailRef = useRef();
   const pwRef = useRef();
   const pwConfirmRef = useRef();
@@ -51,6 +51,7 @@ const Signuppage = () => {
         <Button disabled={loading} type="submit">
           Sign Up
         </Button>
+        {error ? <span>{error}</span> : ""}
       </Form>
     </Container>
   );

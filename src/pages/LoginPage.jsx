@@ -42,6 +42,8 @@ const Loginpage = () => {
           <Form.Control type="password" required ref={pwRef} />
         </Form.Group>
 
+        {error ? <span>{error}</span> : ""}
+
         <Button disabled={loading} type="submit">
           Log In
         </Button>
