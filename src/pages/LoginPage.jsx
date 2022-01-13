@@ -1,5 +1,5 @@
 import React, { useRef, useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useAuthContext } from "../context/AuthContext";
 
 import { Container, Form, Button } from "react-bootstrap";
@@ -7,7 +7,7 @@ import { Container, Form, Button } from "react-bootstrap";
 const Loginpage = () => {
   const emailRef = useRef();
   const pwRef = useRef();
-  const [error, setError] = useState(null);
+  const [setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const { login } = useAuthContext();
   const navigate = useNavigate();

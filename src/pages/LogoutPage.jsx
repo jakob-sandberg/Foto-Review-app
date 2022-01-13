@@ -7,9 +7,13 @@ const LogoutPage = () => {
   const { logout } = useAuthContext();
   const navigate = useNavigate();
 
+  // eslint-disable-next-line
   useEffect(async () => {
+    // eslint-disable-next-line
     await logout();
     navigate("/");
+
+    // eslint-disable-next-line
   }, []);
 
   return (
