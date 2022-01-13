@@ -28,27 +28,29 @@ const Loginpage = () => {
   };
 
   return (
-    <Container className="row d-flex justify-content-center">
-      <h1 className="text-center mt-5">Login to upload your masterpieces</h1>
+    <div className="loginContainer">
+      <Container className="row d-flex justify-content-center">
+        <h1 className="text-center mt-5">Login to upload your masterpieces</h1>
 
-      <Form onSubmit={handleSubmit} className="col-md-4 mt-5">
-        <Form.Group id="email" className="mb-3">
-          <Form.Label>Email</Form.Label>
-          <Form.Control type="email" required ref={emailRef} />
-        </Form.Group>
+        <Form onSubmit={handleSubmit} className="col-md-4 mt-5">
+          <Form.Group id="email" className="mb-3">
+            <Form.Label>Email</Form.Label>
+            <Form.Control type="email" required ref={emailRef} />
+          </Form.Group>
 
-        <Form.Group id="pw" className="mb-3">
-          <Form.Label>Password</Form.Label>
-          <Form.Control type="password" required ref={pwRef} />
-        </Form.Group>
+          <Form.Group id="pw" className="mb-3">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="password" required ref={pwRef} />
+          </Form.Group>
 
-        {error ? <span>{error}</span> : ""}
+          {error ? <span>{error}</span> : ""}
 
-        <Button disabled={loading} type="submit">
-          Log In
-        </Button>
-      </Form>
-    </Container>
+          <Button disabled={loading} type="submit">
+            Log In
+          </Button>
+        </Form>
+      </Container>
+    </div>
   );
 };
 

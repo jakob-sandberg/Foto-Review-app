@@ -9,6 +9,7 @@ import AlbumPage from "./pages/AlbumPage";
 import RequireAuth from "./components/RequireAuth";
 import AlbumPageCustomer from "./pages/AlbumPageCustomer";
 import CustomerDone from "./pages/CustomerDone";
+import "../src/index.css";
 
 function App() {
   return (

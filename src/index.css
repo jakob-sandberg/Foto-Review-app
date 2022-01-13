@@ -141,3 +141,8 @@ code {
   margin: auto;
   width: 50%;
 }
+
+.loginContainer {
+  display: grid;
+  justify-content: center;
+}
