@@ -7,7 +7,7 @@ import { Container, Form, Button } from "react-bootstrap";
 const Loginpage = () => {
   const emailRef = useRef();
   const pwRef = useRef();
-  const [setError] = useState(null);
+  const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
   const { login } = useAuthContext();
   const navigate = useNavigate();
